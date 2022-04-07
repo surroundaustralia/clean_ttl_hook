@@ -2,6 +2,6 @@
 - id: clean_ttl
   name: clean_ttl
   description: removes unused prefixes from .ttl files and sorts the remaining prefixes alphabetically
-  entry: clean_ttl
+  entry: clean_ttl_hook
   language: python
   files: '.ttl'
