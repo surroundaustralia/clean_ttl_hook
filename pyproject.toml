@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "clean_ttl_hook"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["adamdavis2 <adam.davis@surroundaustralia.com>"]
 
