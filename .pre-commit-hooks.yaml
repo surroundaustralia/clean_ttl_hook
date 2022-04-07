@@ -4,4 +4,4 @@
   description: removes unused prefixes from .ttl files and sorts the remaining prefixes alphabetically
   entry: clean_ttl
   language: python
-  files: '\.ttl'
+  files: '.ttl'
