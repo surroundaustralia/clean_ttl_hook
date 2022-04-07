@@ -1,0 +1,219 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix uselesstestprefix: <http://www.example.com> .
+@prefix uselesstestprefix2: <http://www.example.com> .
+@prefix uselesstestprefix3: <http://www.example.com> .
+@prefix uselesstestprefix4: <http://www.example.com> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.19135.xml> a dcat:Distribution ;
+    rdfs:label "ISO 19135"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.atom> a dcat:Distribution ;
+    rdfs:label "Atom"@en ;
+    dcterms:format <http://www.iana.org/assignments/media-types/application/atom+xml> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.csv> a dcat:Distribution ;
+    rdfs:label "CSV"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.html> a dcat:Distribution ;
+    rdfs:label "HTML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.json> a dcat:Distribution ;
+    rdfs:label "JSON"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.rdf> a dcat:Distribution ;
+    rdfs:label "RDF/XML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.xml> a dcat:Distribution ;
+    rdfs:label "XML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.19135.xml> rdfs:label "ISO 19135"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.atom> rdfs:label "Atom"@en ;
+    dcterms:format <http://www.iana.org/assignments/media-types/application/atom+xml> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.csv> rdfs:label "CSV"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.html> rdfs:label "HTML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.json> rdfs:label "JSON"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.rdf> rdfs:label "RDF/XML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.xml> rdfs:label "XML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.19135.xml> rdfs:label "ISO 19135"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.atom> rdfs:label "Atom"@en ;
+    dcterms:format <http://www.iana.org/assignments/media-types/application/atom+xml> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.csv> rdfs:label "CSV"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.html> rdfs:label "HTML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.json> rdfs:label "JSON"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.rdf> rdfs:label "RDF/XML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.xml> rdfs:label "XML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.19135.xml> rdfs:label "ISO 19135"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.atom> rdfs:label "Atom"@en ;
+    dcterms:format <http://www.iana.org/assignments/media-types/application/atom+xml> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.csv> rdfs:label "CSV"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.html> rdfs:label "HTML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.json> rdfs:label "JSON"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.rdf> rdfs:label "RDF/XML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.xml> rdfs:label "XML"@en ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/ENG> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority> a <http://purl.org/net/provenance/ns#DataItem>,
+        skos:Concept ;
+    dcterms:description "A party legally mandated to supervise a resource and/or parties related to a resource."@en ;
+    dcterms:hasFormat <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.19135.xml>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.atom>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.csv>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.html>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.json>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.rdf>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority/authority.en.xml> ;
+    dcterms:identifier "authority"^^rdfs:Literal ;
+    dcterms:title "authority"@en ;
+    rdfs:isDefinedBy <http://inspire.ec.europa.eu/applicationschema/base2> ;
+    owl:sameAs <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority:1> ;
+    skos:definition "A party legally mandated to supervise a resource and/or parties related to a resource."@en ;
+    skos:inScheme <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue> ;
+    skos:prefLabel "authority"@en ;
+    skos:topConceptOf <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue> ;
+    adms:last <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority> ;
+    adms:status <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator> a <http://purl.org/net/provenance/ns#DataItem>,
+        skos:Concept ;
+    dcterms:description "A party that runs a resource."@en ;
+    dcterms:hasFormat <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.19135.xml>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.atom>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.csv>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.html>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.json>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.rdf>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator/operator.en.xml> ;
+    dcterms:identifier "operator"^^rdfs:Literal ;
+    dcterms:title "operator"@en ;
+    rdfs:isDefinedBy <http://inspire.ec.europa.eu/applicationschema/base2> ;
+    owl:sameAs <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator:1> ;
+    skos:definition "A party that runs a resource."@en ;
+    skos:inScheme <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue> ;
+    skos:prefLabel "operator"@en ;
+    skos:topConceptOf <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue> ;
+    adms:last <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator> ;
+    adms:status <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner> a <http://purl.org/net/provenance/ns#DataItem>,
+        skos:Concept ;
+    dcterms:description "A party that owns a resource, i.e., to which a resource belongs in a legal sense."@en ;
+    dcterms:hasFormat <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.19135.xml>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.atom>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.csv>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.html>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.json>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.rdf>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner/owner.en.xml> ;
+    dcterms:identifier "owner"^^rdfs:Literal ;
+    dcterms:title "owner"@en ;
+    rdfs:isDefinedBy <http://inspire.ec.europa.eu/applicationschema/base2> ;
+    owl:sameAs <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner:1> ;
+    skos:definition "A party that owns a resource, i.e., to which a resource belongs in a legal sense."@en ;
+    skos:inScheme <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue> ;
+    skos:prefLabel "owner"@en ;
+    skos:topConceptOf <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue> ;
+    adms:last <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner> ;
+    adms:status <http://inspire.ec.europa.eu/registry/status/valid> .
+
+<http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue> a <http://purl.org/net/provenance/ns#DataItem>,
+        skos:ConceptScheme,
+        dcat:Dataset ;
+    dcterms:description "Classification of related party roles."@en ;
+    dcterms:hasPart <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner> ;
+    dcterms:identifier "RelatedPartyRoleValue"^^rdfs:Literal ;
+    dcterms:title "Role of a Related Party"@en ;
+    rdfs:isDefinedBy <http://inspire.ec.europa.eu/applicationschema/base2> ;
+    owl:sameAs <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue:1> ;
+    skos:definition "Classification of related party roles."@en ;
+    skos:hasTopConcept <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/authority>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/operator>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/owner> ;
+    skos:prefLabel "Role of a Related Party"@en ;
+    adms:last <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue> ;
+    adms:status <http://inspire.ec.europa.eu/registry/status/valid> ;
+    dcat:distribution <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.19135.xml>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.atom>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.csv>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.html>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.json>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.rdf>,
+        <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.xml> .
+

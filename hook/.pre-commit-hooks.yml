@@ -1,0 +1,7 @@
+# .pre-commit-hooks.yaml
+- id: clean_ttl
+  name: clean_ttl
+  description: removes unused prefixes from .ttl files and sorts the remaining prefixes alphabetically
+  entry: clean_ttl
+  language: python
+  files: '\.ttl'

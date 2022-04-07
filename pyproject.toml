@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "clean_ttl_pre_commit"
+version = "0.1.0"
+description = ""
+authors = ["adamdavis2 <adam.davis@surroundaustralia.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rdflib = "^6.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
