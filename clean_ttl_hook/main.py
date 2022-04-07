@@ -35,3 +35,6 @@ def main():
 
     for file in args.filenames:
         clean_ttl(file)
+
+if __name__ == "__main__":
+    main()
