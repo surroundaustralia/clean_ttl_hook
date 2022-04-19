@@ -1,9 +1,13 @@
-@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix uselesstestprefix: <http://www.example.com> .
+@prefix uselesstestprefix2: <http://www.example.com> .
+@prefix uselesstestprefix3: <http://www.example.com> .
+@prefix uselesstestprefix4: <http://www.example.com> .
 
 <http://inspire.ec.europa.eu/codelist/RelatedPartyRoleValue/RelatedPartyRoleValue.en.19135.xml> a dcat:Distribution ;
     rdfs:label "ISO 19135"@en ;
