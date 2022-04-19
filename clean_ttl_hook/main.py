@@ -1,24 +1,27 @@
 import argparse
+import os
 from pathlib import Path
 
 import rdflib
 from rdflib import Graph
+from rdfx import File
 
 
-def clean_ttl(input_file_path: Path):
-    # get a list of all leading comments in the file
+# removes unused namespace entries and re-serializes a graph with the prefixes in sorted order
+def clean_ttl(input_file_path:Path):
+    #get a list of all leading comments in the file
     comments_list = []
     comment_flag = False
-    with open(input_file_path, "r", encoding="utf-8", errors='ignore') as f:
+    with open(input_file_path, "r", encoding='utf-8', errors='ignore') as f:
         for index, line in enumerate(f):
-            if len(line.strip()) > 0 and line.strip()[0] == "#" and index == 0:
-                comments_list.append(line)
+            if len(line.strip()) > 0 and line.strip()[0] == '#' and index == 0:
+                comments_list.append(line.strip()[1:])
                 comment_flag = True
 
-            elif len(line.strip()) > 0 and line.strip()[0] == "#" and comment_flag:
-                comments_list.append(line)
+            elif len(line.strip()) > 0 and line.strip()[0] == '#' and comment_flag:
+                comments_list.append(line.strip()[1:])
 
-            elif len(line.strip()) > 0 and line.strip()[0] != "#":
+            elif len(line.strip()) > 0 and line.strip()[0] != '#':
                 comment_flag = False
 
             elif not comment_flag:
@@ -45,15 +48,9 @@ def clean_ttl(input_file_path: Path):
 
     for s, p, o in g:
         f.add((s, p, o))
-    f.serialize(destination=input_file_path, format="turtle")
-
-    with open(input_file_path, "r", encoding="utf-8", errors='ignore') as f:
-        lines = f.readlines()
-
-    comments_list.extend(lines)
-    with open(input_file_path, "w") as f:
-        comments_list = "".join(comments_list)
-        f.write(comments_list)
+    os.remove(input_file_path)
+    ps = File(directory=os.getcwd())
+    ps.write(g=g, filename=input_file_path.stem, leading_comments=comments_list)
 
 
 def main():
