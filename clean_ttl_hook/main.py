@@ -50,7 +50,7 @@ def clean_ttl(input_file_path:Path):
         f.add((s, p, o))
     os.remove(input_file_path)
     ps = File(directory=os.getcwd())
-    ps.write(g=g, filename=input_file_path.stem, leading_comments=comments_list)
+    ps.write(g=g, filename=Path(input_file_path).stem, leading_comments=comments_list)
 
 
 def main():
