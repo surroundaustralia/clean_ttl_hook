@@ -5,7 +5,7 @@ description = ""
 authors = ["adamdavis2 <adam.davis@surroundaustralia.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.6"
 rdflib = "^6.1.1"
 
 [tool.poetry.dev-dependencies]
