@@ -9,7 +9,7 @@ def clean_ttl(input_file_path: Path):
     # get a list of all leading comments in the file
     comments_list = []
     comment_flag = False
-    with open(input_file_path, "r", encoding="utf-8") as f:
+    with open(input_file_path, "r", encoding="utf-8", errors='ignore') as f:
         for index, line in enumerate(f):
             if len(line.strip()) > 0 and line.strip()[0] == "#" and index == 0:
                 comments_list.append(line)
@@ -47,7 +47,7 @@ def clean_ttl(input_file_path: Path):
         f.add((s, p, o))
     f.serialize(destination=input_file_path, format="turtle")
 
-    with open(input_file_path, "r", encoding="utf-8") as f:
+    with open(input_file_path, "r", encoding="utf-8", errors='ignore') as f:
         lines = f.readlines()
 
     comments_list.extend(lines)
