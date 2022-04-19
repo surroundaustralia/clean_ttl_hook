@@ -5,20 +5,20 @@ import rdflib
 from rdflib import Graph
 
 
-def clean_ttl(input_file_path:Path):
-    #get a list of all leading comments in the file
+def clean_ttl(input_file_path: Path):
+    # get a list of all leading comments in the file
     comments_list = []
     comment_flag = False
-    with open(input_file_path, "r") as f:
+    with open(input_file_path, "r", encoding="utf-8") as f:
         for index, line in enumerate(f):
-            if len(line.strip()) > 0 and line.strip()[0] == '#' and index == 0:
+            if len(line.strip()) > 0 and line.strip()[0] == "#" and index == 0:
                 comments_list.append(line)
                 comment_flag = True
 
-            elif len(line.strip()) > 0 and line.strip()[0] == '#' and comment_flag:
+            elif len(line.strip()) > 0 and line.strip()[0] == "#" and comment_flag:
                 comments_list.append(line)
 
-            elif len(line.strip()) > 0 and line.strip()[0] != '#':
+            elif len(line.strip()) > 0 and line.strip()[0] != "#":
                 comment_flag = False
 
             elif not comment_flag:
@@ -45,15 +45,16 @@ def clean_ttl(input_file_path:Path):
 
     for s, p, o in g:
         f.add((s, p, o))
-    f.serialize(destination=input_file_path, format='turtle')
+    f.serialize(destination=input_file_path, format="turtle")
 
-    with open(input_file_path, "r") as f:
+    with open(input_file_path, "r", encoding="utf-8") as f:
         lines = f.readlines()
 
     comments_list.extend(lines)
     with open(input_file_path, "w") as f:
         comments_list = "".join(comments_list)
         f.write(comments_list)
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -62,6 +63,7 @@ def main():
 
     for file in args.filenames:
         clean_ttl(file)
+
 
 if __name__ == "__main__":
     main()
