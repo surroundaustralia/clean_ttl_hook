@@ -49,8 +49,11 @@ def clean_ttl(input_file_path:Path):
     for s, p, o in g:
         f.add((s, p, o))
     os.remove(input_file_path)
-    ps = File(directory=os.getcwd())
-    ps.write(g=g, filename=Path(input_file_path).stem, leading_comments=comments_list)
+    ps = File(directory=input_file_path.parent)
+    if len(comments_list) > 0:
+        ps.write(g=g, filename=input_file_path.stem, leading_comments=comments_list)
+    else:
+        ps.write(g=g, filename=input_file_path.stem)
 
 
 def main():
