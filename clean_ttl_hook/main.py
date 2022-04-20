@@ -8,20 +8,21 @@ from rdfx import File
 
 
 # removes unused namespace entries and re-serializes a graph with the prefixes in sorted order
-def clean_ttl(input_file_path:Path):
-    #get a list of all leading comments in the file
+def clean_ttl(input_file_path: Path):
+    # get a list of all leading comments in the file
+    input_file_path = Path(input_file_path)
     comments_list = []
     comment_flag = False
-    with open(input_file_path, "r", encoding='utf-8', errors='ignore') as f:
+    with open(input_file_path, "r", encoding="utf-8", errors="ignore") as f:
         for index, line in enumerate(f):
-            if len(line.strip()) > 0 and line.strip()[0] == '#' and index == 0:
+            if len(line.strip()) > 0 and line.strip()[0] == "#" and index == 0:
                 comments_list.append(line.strip()[1:])
                 comment_flag = True
 
-            elif len(line.strip()) > 0 and line.strip()[0] == '#' and comment_flag:
+            elif len(line.strip()) > 0 and line.strip()[0] == "#" and comment_flag:
                 comments_list.append(line.strip()[1:])
 
-            elif len(line.strip()) > 0 and line.strip()[0] != '#':
+            elif len(line.strip()) > 0 and line.strip()[0] != "#":
                 comment_flag = False
 
             elif not comment_flag:
